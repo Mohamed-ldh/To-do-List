@@ -1,0 +1,124 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:rgb(17, 17, 66);
+    margin: 0;
+    height: 1000px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+.todo{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: white;
+  border-radius: 15px;
+  padding: 80px;
+  height: 50%;
+  width: 60%;
+  max-width: 450px;
+  box-shadow: 3px 3px 8px black;
+}
+h2{
+  text-align: center;
+}
+
+input[type=text]{
+  background-color: white;
+  padding: 7px;
+  width: 340px;
+  border-color: transparent;
+}
+.btn{
+  color: white;
+  padding: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-weight: bold;
+  background-color: rgb(17, 17, 66);
+  border-color: transparent;
+  border-radius: 10px;
+}
+.counter-container{
+  height: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#deleteButton{
+  font-weight: bold;
+  border: none;
+  background-color: transparent;
+  color: rgb(245, 102, 102);
+  font-size: 16px;
+    
+}
+.credits{
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+ul {
+  overflow-y: scroll;
+}
+
+li {
+  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 19px;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  
+}
+
+input[type="checkbox"]::before {
+  content: "\2713";
+  display: inline-block;
+  width: 12px;
+  height: 32px;
+  font-size: 28px;
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  color: black;
+}
+
+input[type="checkbox"]:checked::before {
+  display: inline;
+  color: white;
+  background-color: green;
+  border: 1px solid transparent;
+  border-radius: 50%;
+}
+
+#todoList p {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+#todoList .disabled {
+  color: #bbbbbb;
+}
+
+.disabled {
+  display: flex;
+  text-decoration: line-through;
+}
+
+#logout{
+  text-decoration: none;
+  color: white;
+}
+#logout:visited{
+  text-decoration: none;  color: white;
+}
